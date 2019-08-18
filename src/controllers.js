@@ -22,3 +22,6 @@ exports.emailSend = async (ctx) => {
 exports.completeaccount = async (ctx) => {
   await ctx.render('completeaccount');
 };
+exports.index = async (ctx) => {
+  await ctx.render('index');
+};

@@ -11,5 +11,6 @@ router.get('recoveryPassword', ctrl.recoveryPassword);
 router.get('personalInfo', ctrl.personalInfo);
 router.get('emailSend', ctrl.emailSend);
 router.get('completeAccount', ctrl.completeaccount);
+router.get('', ctrl.index);
 
 module.exports = router;

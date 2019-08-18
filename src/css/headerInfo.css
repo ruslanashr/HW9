@@ -1,0 +1,42 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	border-bottom: 1px solid #DAE4F2;
+	font-weight: normal;
+	color: #252f48;
+	height: 60px;
+	padding-left: 61px;
+	padding-right: 123px;
+}
+
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+}
+
+.breadcrumb__item {
+	margin-right: 12px;
+}
+
+.breadcrumb__separator {
+	margin-right: 11px;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.profile__name {
+	text-transform: none;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.28px;
+	color: #252F48;
+	margin-bottom: 0;
+	margin-right: 8px;
+}

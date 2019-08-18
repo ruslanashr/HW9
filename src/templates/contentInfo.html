@@ -1,0 +1,73 @@
+<main>
+    {%include "headerInfo.html"%}
+    <div class="info__window">
+        <div class="info">
+            <div class="info__title">
+                <div class="info__personal info__information--active"><h6>PERSONAL INFORMATION</h6></div>
+                <div class="info__account"><h6>ACCOUNT INFORMATION</h6></div>
+            </div>
+            <div class="about">
+                <div class="info_photo">
+                    <img class="avatar" src="../image/Oval_2.2@4.png" alt="">
+                    <a class="change_avatar" href=""><img src="../image/Vector2.svg" alt="">Change photo</a>
+                </div>
+                <div class="data">
+                    <div class="data__first">
+                        <div class="data__info data__name">
+                            <span class="title__name">First Name</span>
+                            <input type="text" placeholder="First name">
+                        </div>
+                        <div class="data__info data__title">
+                            <span class="title__name">Title</span>
+                            <select name="" id="">
+                                <option value="">Mr</option>
+                                <option value="">Mrs</option>
+                            </select>
+                        </div>
+                        <div class="data__info data__country">
+                            <span class="title__name">Country</span>
+                            <select name="" id="">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="data__second">
+                        <div class="data__info data__lastname">
+                            <span class="title__name">Last Name</span>
+                            <input type="text" placeholder="Last name">
+                        </div>
+                        <div class="data__info data__phone">
+                            <span class="title__name">Mobila phone</span>
+                            <div class="phone__info">
+                                <select name="" id="">
+                                    <option value="ua">🇺🇦</option>
+                                    <option value="pl">🇵🇱</option>
+                                    <option value="au">🇦🇺</option>
+                                </select>
+                                <input type="tel">
+                            </div>
+                        </div>
+                        <div class="data__info data__company">
+                            <span class="title__name">Company</span>
+                            <input type="text">
+                        </div>        
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <div class="account__login">
+                    <div class="account__user">
+                        <span class="title__name">Username</span>
+                        <input type="text">
+                    </div>
+                    <div class="account__email">
+                        <span class="title__name">E-mail</span>
+                        <input type="email">
+                    </div>
+                </div>    
+                <div class="account__change">
+                    <a href="/completeAccount">Change password  <img src="../image/Vectorright.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

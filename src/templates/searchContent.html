@@ -1,0 +1,148 @@
+<main>
+    {% include "headerInfo.html" %}
+    <div class="info__window">
+        <div class="search-form">
+            <div class="search-form__data location">
+                <span class="title__name">Location</span>
+                <select name="" id=""></select>
+            </div>
+            <div class="search-form__data search">
+                <span class="title__name">Search</span>
+                <input type="text" placeholder="Type your query...">
+            </div>
+            <div class="search-form__data category">
+                <span class="title__name">Category</span>
+                <select name="" id=""></select>
+            </div>
+            <div class="search-form__data service">
+                <span class="title__name">Service</span>
+                <select name="" id=""></select>
+            </div>
+            <div class="search-form__data period">
+                <span class="title__name">Period</span>
+                <input type="data">
+            </div>
+            <button class="search-form__button">Search</button>
+        </div>
+        <div class="search-result">
+            <div class="search-result__topSection topSetion">
+                <a class="topSection__map" href="">Show map</a>
+                <div class="topSetion__sort">
+                    <img src="../image/sort.svg" alt="">
+                    <div class="topSetion__sort__name price">
+                        <label class="container sort-name">by price
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="topSetion__sort__name price">
+                        <label class="container sort-name">by rating
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="search-result__result">
+                <div class="result__content">
+                    {%set users=[{  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: " Richard Thompson ",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 },
+                                 {  
+                                    avatar: "../image/Mask.png",
+                                    name: "Richard Thompson",
+                                    star: "../image/gold.svg",
+                                    location: "Vancouver, Canada",
+                                    stack: "Python, Django, Sketch",
+                                    rate: "$ 1,200 USD"
+                                 }]%}
+                    {% for ka in users %}
+                        <section class="result__content__user">
+                        <img class="result__avatar" src={{ka.avatar}} alt="">
+                        <div class="result__cover">
+                            <div class="result__user">
+                                <h3 class="result__name">{{ka.name}}</h3>
+                                <img class="result__star gold" src={{ka.star}} alt="">
+                            </div>
+                            <div class="result__userInfo">
+                                <div class="userInfo__location">
+                                    <img class="userInfo__location__img" src="../image/placeholder.svg" alt="">
+                                    <span class="userInfo__location__city userInfo">{{ka.location}}</span>
+                                </div>
+                                <div class="userInfo__proffesion">
+                                    <span class="userInfo__proffesion__name userInfo__definition">Stack:</span>
+                                    <span class="userInfo__proffesion__data userInfo">{{ka.stack}}</span>
+                                    <a class="userInfo__proffesion__moreInfo" href="">More</a>
+                                </div>
+                                <div class="userInfo__money">
+                                    <span class="userInfo__money__rate userInfo__definition">Base Daily Rate:</span>
+                                    <span class="userInfo__money__dollars userInfo">{{ka.rate}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section> 
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="search-result__topSection topSetion">
+                <a class="topSection__results" href="">Show results</a>
+            </div>
+            <iframe src="https://snazzymaps.com/embed/175076" width="750px" height="440px" style="border:none;"></iframe>
+        </div>
+    </div>
+</main>

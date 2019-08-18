@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/window.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
+    <title>Reset password</title>
+</head>
+<body>
+    {% set header_text = "Back to" %}
+    {% set header_link = "Sign in" %}
+    {% set header_url = "/signIn" %}
+    {% include "header.html" %}
+    {% set form_name = "resetPassword" %}
+    {% include form_name + ".html" %}
+</body>
+</html>

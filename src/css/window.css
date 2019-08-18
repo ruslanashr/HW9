@@ -1,0 +1,8 @@
+.window {
+	background-color: #fff;
+	padding: 72px 115px 81px 115px;
+	width: 30%;
+	align-self: center;
+	box-shadow: 0px 5px 40px rgba(0, 45, 113, 0.06);
+	border-radius: 10px;
+}
